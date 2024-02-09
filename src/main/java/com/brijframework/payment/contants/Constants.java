@@ -4,7 +4,9 @@ public class Constants {
 	public static final String CUST_ID = "CUST_ID";
 	public static final String BUSINESS_ID = "BUSINESS_ID";
 	public static final String APP_ID = "APP_ID";
-	
+	public static final String OWNER_ID_KEY = "ownerId";
+	public static final String APP_ID_KEY = "appId";
+	public static final String BUSINESS_ID_KEY = "businessId";
 	public static final String USER_APP_ID = "userId";
 	public static final String CUST_APP_ID = "custAppId";
 	public static final String CUST_APP_ID_URI = "{custAppId}";

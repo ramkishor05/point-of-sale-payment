@@ -1,8 +1,5 @@
 package com.brijframework.payment.entities;
-import static com.brijframework.payment.contants.Constants.*;
-import static com.brijframework.payment.contants.Constants.APP_ID;
-import static com.brijframework.payment.contants.Constants.BUSINESS_ID;
-import static com.brijframework.payment.contants.Constants.CUST_ID;
+import static com.brijframework.payment.contants.TableConstants.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,5 +23,40 @@ public class EOCustBusinessApp extends EOCustObject {
 
 	@Column(name = BUSINESS_ID, nullable = false)
 	private long businessId;
+	
+	public EOCustBusinessApp() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public EOCustBusinessApp(long appId, long custId, long businessId) {
+		super();
+		this.appId = appId;
+		this.custId = custId;
+		this.businessId = businessId;
+	}
+
+	public long getAppId() {
+		return appId;
+	}
+
+	public void setAppId(long appId) {
+		this.appId = appId;
+	}
+
+	public long getCustId() {
+		return custId;
+	}
+
+	public void setCustId(long custId) {
+		this.custId = custId;
+	}
+
+	public long getBusinessId() {
+		return businessId;
+	}
+
+	public void setBusinessId(long businessId) {
+		this.businessId = businessId;
+	}
 	
 }
