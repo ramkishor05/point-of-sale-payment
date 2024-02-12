@@ -9,6 +9,8 @@ public class CustProductSalePayment extends UIComman {
 	private Long customerId;
 	
 	private Boolean primaryPayment;
+	
+	private Long custProductPurchaseId;
 
 	public Long getCustomerId() {
 		return customerId;
@@ -32,6 +34,14 @@ public class CustProductSalePayment extends UIComman {
 
 	public void setPrimaryPayment(Boolean primaryPayment) {
 		this.primaryPayment = primaryPayment;
+	}
+
+	public Long getCustProductPurchaseId() {
+		return custProductPurchaseId;
+	}
+
+	public void setCustProductPurchaseId(Long custProductPurchaseId) {
+		this.custProductPurchaseId = custProductPurchaseId;
 	}
 	
 }
