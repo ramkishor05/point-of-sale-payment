@@ -1,16 +1,20 @@
 package com.brijframework.payment.rest;
 
+import com.brijframework.payment.contants.PaymentState;
 import com.brijframework.payment.dto.UIComman;
+import com.brijframework.payment.dto.UICustTransaction;
 
 public class CustProductSalePayment extends UIComman {
 
-	private Long custTransactionId;
+	private UICustTransaction custTransaction;
 	
 	private Long customerId;
 	
 	private Boolean primaryPayment;
 	
 	private Long custProductPurchaseId;
+	
+	private PaymentState paymentState;
 
 	public Long getCustomerId() {
 		return customerId;
@@ -20,12 +24,12 @@ public class CustProductSalePayment extends UIComman {
 		this.customerId = customerId;
 	}
 	
-	public Long getCustTransactionId() {
-		return custTransactionId;
+	public UICustTransaction getCustTransaction() {
+		return custTransaction;
 	}
 
-	public void setCustTransactionId(Long custTransactionId) {
-		this.custTransactionId = custTransactionId;
+	public void setCustTransaction(UICustTransaction custTransaction) {
+		this.custTransaction = custTransaction;
 	}
 
 	public Boolean getPrimaryPayment() {
@@ -43,5 +47,12 @@ public class CustProductSalePayment extends UIComman {
 	public void setCustProductPurchaseId(Long custProductPurchaseId) {
 		this.custProductPurchaseId = custProductPurchaseId;
 	}
-	
+
+	public PaymentState getPaymentState() {
+		return paymentState;
+	}
+
+	public void setPaymentState(PaymentState paymentState) {
+		this.paymentState = paymentState;
+	}
 }
