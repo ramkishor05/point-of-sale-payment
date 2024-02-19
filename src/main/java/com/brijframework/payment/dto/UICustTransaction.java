@@ -16,6 +16,7 @@ public class UICustTransaction extends UIComman{
 	private Long transactionReciverId;
 	private Long transactionSenderId;
 	private Long transactionMakerId;
+	private String transactionService;
 
 	public String getTransactionId() {
 		return transactionId;
@@ -87,5 +88,13 @@ public class UICustTransaction extends UIComman{
 
 	public void setTransactionMakerId(Long transactionMakerId) {
 		this.transactionMakerId = transactionMakerId;
+	}
+
+	public String getTransactionService() {
+		return transactionService;
+	}
+
+	public void setTransactionService(String transactionService) {
+		this.transactionService = transactionService;
 	}
 }
