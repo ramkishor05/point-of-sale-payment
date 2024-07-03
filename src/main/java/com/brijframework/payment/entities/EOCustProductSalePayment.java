@@ -6,14 +6,14 @@ import static com.brijframework.payment.contants.TableConstants.CUST_TRANSACTION
 import static com.brijframework.payment.contants.TableConstants.EOCUST_PRODUCT_SALE_PAYMENT;
 import static com.brijframework.payment.contants.TableConstants.PRIMARY_PAYMENT;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Inheritance;
+import jakarta.persistence.InheritanceType;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)

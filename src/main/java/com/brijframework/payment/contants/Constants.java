@@ -1,6 +1,8 @@
 package com.brijframework.payment.contants;
 
 public class Constants {
+    public static final String AUTHORIZATION = "Authorization";
+
 	public static final String CUST_ID = "CUST_ID";
 	public static final String BUSINESS_ID = "BUSINESS_ID";
 	public static final String APP_ID = "APP_ID";
